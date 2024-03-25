@@ -1,0 +1,389 @@
+.main-container{
+    display: flex; /* Add this line to make the container a flex container */
+    justify-content: flex-end; /* Change to flex-end to move the button to the right */
+    align-items: center; /* Add this line to center the items vertically */
+    height: 100vh;  /* Add this line to make the container take the full height of the viewport */
+    position: relative; /* Add this line to make the container a positioning context */
+}
+
+.side-bar-button{
+    display: flex; /* Add this line to make the container a flex container */
+    flex-direction: column; /* Add this line to make the container a column */
+    gap: 50px;      /* Add this line to create a gap between the buttons */
+    padding: 20px;  /* Add this line to create a padding around the buttons */
+    margin: 20px;  /* Add this line to create a margin around the buttons */
+    height: 280px; /* Add this line to make the container take the full height of the viewport */
+    align-items: center; /* Add this line to center the items horizontally */
+}
+
+.api-btn{
+    background-color: #4CAF50; /* Green */
+    color: white; /* White text */
+    padding: 40px 40px; /* Increase padding to make the button bigger */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button a block element */
+    font-size: 16px; /* Increase font size */
+    border-radius: 10px; /* Add rounded corners */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    align-items: center; /* Add this line to center the items horizontally */
+}
+
+.api-btn:hover{ /* Add a hover effect */
+    background-color: #10f21b;
+}
+
+.side-bar-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+    height: 90%;
+    align-items: center;
+    width: 500%; /* Add this line to make the container take the full width of the viewport */
+    overflow: auto; /* Add this line to make the container scrollable */
+}
+
+.laptop-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add this line to create a gap between the items */
+    width: 300px; /* Add this line to set the width of the card */
+    border: 2px solid black; /* Add this line to create a border around the card */
+    border-radius: 20px;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+}
+
+.laptop-card-list{
+    display: flex; 
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap; /* Add this line to wrap the items to the next line */
+    justify-content: center; /* Add this line to center the items horizontally */
+}
+
+
+.laptop-product-index{
+    align-items: center; /* Add this line to center the items horizontally */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.laptop-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button a block element */
+    font-size: 16px; 
+    border-radius: 10px;
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    align-items: center; 
+    gap: 20px;
+    margin: 10px;    
+}
+
+.laptop-btn:hover{
+    background-color: #1dd226;
+}
+
+.monitor-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 20px;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+}
+
+.monitor-card-list{
+    display: flex;
+    flex-direction: row; /* Add this line to make the container a row */
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;    
+}
+
+.monitor-product-index{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.monitor-btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    align-items: center;
+    gap: 20px;
+    margin: 10px;    
+}
+
+.monitor-btn:hover{
+    background-color: #1dd226;
+}
+
+
+.edit-form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(235, 243, 231);
+    border: 2px solid rgb(21, 152, 75);
+    align-items: center; /* Add this line to center the items horizontally */
+}
+
+.button-edit{
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.button-edit:hover{
+    background-color: #1dd226;
+}
+
+
+.create-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center; /* Center the text */
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;    
+}
+
+.create-button:hover{
+    background-color: #1dd226;
+}
+
+
+#myModal {
+    background-color: #0000007d;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.modal-content{
+    border: 1px solid rgb(128, 151, 167);
+    height: 500px;
+    width: 400px;
+    padding: 10px;
+    background-color: rgb(238, 235, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}  
+
+
+.close-modal{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    gap: 20px;
+    margin: 10px;    
+}
+
+.close-modal:hover{
+    background-color: #1dd226;
+}
+
+.button-edit{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;    
+}
+
+.button-edit:hover{
+    background-color: #1dd226;
+}
+
+.modal-product-image{
+    height: 200px;
+    width: 200px;
+}
+
+.laptop-image{
+    height: 200px;
+    width: 200px;
+}
+
+.monitor-image{
+    height: 200px;
+    width: 200px;
+}
+
+.button-create{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 20px; /* Increase padding to make the button bigger */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;    
+    flex-direction: column;
+}
+
+.button-create:hover{
+    background-color: #1dd226;
+}
+
+
+.create-form-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    padding: 10px;
+    align-items: center; /* Add this line to center the items horizontally */
+}
+
+.modal-content h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-content p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal-product-image{
+    height: 300px;
+    width: 300px;
+}
+
+.side-bar-button h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.side-bar-content h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#edit-form{
+    background-color: #0000007d;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.edit-modal-content{
+    border: 1px solid rgb(128, 151, 167);
+    height: 400px;
+    width: 300px;
+    padding: 10px;
+    background-color: rgb(238, 235, 228);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 20px;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.edit-modal-content h2{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#create-form{
+    background-color: #0000007d;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-create{
+    border: 1px solid rgb(128, 151, 167);
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+    background-color: rgb(238, 235, 228);
+    position: absolute; /* Add this line to make the form absolute */ 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Add this line to center the form */
+    z-index: 1; /* Add this line to make the form appear on top of the overlay */
+    border-radius: 20px;
+    align-items: center; /* Add this line to center the items horizontally */
+    justify-content: center; /* Add this line to center the items vertically */
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
